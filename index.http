@@ -1,0 +1,37 @@
+POST http://localhost:3000/api/cursos/programacion 
+Content-Type:application/json
+
+{
+    "id": 4, 
+        "titulo": "Aprende python", 
+        "lenguaje": "python", 
+        "vistas": 15000, 
+        "nivel": "basico"
+    
+}
+
+###
+PUT http://localhost:3000/api/cursos/programacion/2
+Content-Type:application/json
+
+{
+        "id": 2, 
+        "titulo": "Aprende python con marianela", 
+        "lenguaje": "python", 
+        "vistas": 15000000000000, 
+        "nivel": "avanzadisimo"
+}
+
+###
+PATCH http://localhost:3000/api/cursos/programacion/2
+Content-Type:application/json
+
+{
+        
+        "titulo": "Aprende python con marianela ACOSTA", 
+        "vistas": 150
+    
+}
+
+###
+DELETE  http://localhost:3000/api/cursos/programacion/1
